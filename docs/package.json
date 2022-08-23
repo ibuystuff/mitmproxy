@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "bulma": "^0.6.1",
-    "node-sass": "^4.7.2"
-  }
+    "node-sass": "^7.0.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
